@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cutline Barbershop</title> <!-- CHANGE: business name -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #14213d;
+    --red: #c8102e;
+    --paper: #f7f7f5;
+    --ink: #1b1f2a;
+    --mute: #5b6475;
+    --head: "Archivo Black", Impact, sans-serif;
+    --body: "Work Sans", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: var(--body); color: var(--ink); background: var(--paper); line-height: 1.6; }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+  /* The one memorable thing: a barber-pole band */
+  .pole {
+    height: 18px;
+    background: repeating-linear-gradient(-45deg, var(--red) 0 14px, #fff 14px 28px, var(--navy) 28px 42px, #fff 42px 56px);
+  }
+  header { background: var(--navy); color: #fff; padding: 56px 24px 48px; }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  h1 { font-family: var(--head); font-size: clamp(2.4rem, 9vw, 4rem); line-height: 1.05; }
+  header p { margin: 16px 0 28px; max-width: 34ch; color: #d6dbe6; }
+  .btn {
+    display: inline-block; background: var(--red); color: #fff; text-decoration: none;
+    font-weight: 600; padding: 14px 26px; border-radius: 4px;
+  }
+  section { padding: 44px 24px; }
+  h2 { font-family: var(--head); font-size: 1.6rem; margin-bottom: 18px; color: var(--navy); }
+
+  .menu { list-style: none; padding: 0; }
+  .menu li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #d9dce3; }
+  .menu span:last-child { font-weight: 600; }
+
+  .info { background: #fff; border-top: 1px solid #e3e5ea; }
+  .info dl { display: grid; grid-template-columns: 7.5rem 1fr; gap: 8px 12px; }
+  .info dt { font-weight: 600; color: var(--mute); }
+  .info dd { margin: 0; }
+  footer { text-align: center; padding: 28px 24px 40px; color: var(--mute); font-size: .9rem; }
+</style>
+</head>
+<body>
+  <div class="pole" aria-hidden="true"></div>
+
+  <header>
+    <div class="wrap">
+      <h1>Cutline Barbershop</h1> <!-- CHANGE -->
+      <p>Clean fades, sharp lineups, and straight-razor shaves. Walk-ins welcome.</p> <!-- CHANGE -->
+      <a class="btn" href="tel:+15555550123">Call to book</a> <!-- CHANGE: phone number -->
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Services</h2>
+      <!-- CHANGE: services and prices -->
+      <ul class="menu">
+        <li><span>Haircut</span><span>$25</span></li>
+        <li><span>Fade and lineup</span><span>$30</span></li>
+        <li><span>Beard trim</span><span>$15</span></li>
+        <li><span>Hot towel shave</span><span>$25</span></li>
+        <li><span>Kids cut (under 12)</span><span>$18</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="wrap">
+      <h2>Visit us</h2>
+      <!-- CHANGE: hours and address -->
+      <dl>
+        <dt>Address</dt><dd>123 Main Street<br>Your Town, ST 00000</dd>
+        <dt>Mon to Fri</dt><dd>9am to 7pm</dd>
+        <dt>Saturday</dt><dd>8am to 5pm</dd>
+        <dt>Sunday</dt><dd>Closed</dd>
+        <dt>Phone</dt><dd><a href="tel:+15555550123">(555) 555-0123</a></dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>Cutline Barbershop</footer> <!-- CHANGE -->
+</body>
+</html>
